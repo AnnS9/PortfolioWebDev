@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="portfolio-container">
+    
+    <!-- LEFT SIDE MENU -->
+    <aside class="sidebar">
+  
+  <!-- Logo Section -->
+  <div class="brand">
+    <a href="#" class="logo">
+      <!-- You can replace this text with an <img src="logo.png"> if you have a graphic logo -->
+      MyPortfolio<span>.</span>
+    </a>
+  </div>
+
+  <!-- Profile Picture Section -->
+  <div class="profile">
+    <img src="images/logo.png" alt="Anna Sikora" class="profile-pic">
+    <h3 class="profile-name">Anna Sikora</h3>
+    
+  </div>
+
+  <!-- Navigation Menu -->
+  <nav class="menu">
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#about">About me</a></li>
+    </ul>
+  </nav>
+
+  <div class="socials">
+        <!-- LinkedIn Icon -->
+        <a href="#" aria-label="LinkedIn" title="LinkedIn">
+          <svg xmlns="https://www.linkedin.com/in/anna-sikora-webdev/" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        
+        <!-- GitHub Icon -->
+        <a href="#" aria-label="GitHub" title="GitHub">
+          <svg xmlns="https://github.com/AnnS9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+
+        <!-- Email Icon -->
+        <a href="mailto:anna.sik04@gmail.com" aria-label="Email" title="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+      </div>
+
+</aside>
+
+    <!-- RIGHT SIDE CONTENT -->
+    <main class="main-content">
+      
+      <!-- Intro Section -->
+      <section class="hero">
+        <h1>Hi, I'm a Web Developer focusing on clean design and solid code.</h1>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+  <h2 class="section-title">Selected Projects</h2>
+  
+  <div class="project-grid">
+    
+    <!-- Project 1 -->
+    <article class="project-card">
+      <div class="project-image">
+        <img src="images/adrenalink.png" alt="Project 1 Cover">
+      </div>
+      <div class="project-content">
+        <h3>Adrenalink - Web Platform for Extreme Sport Enthusiasts</h3>
+        <p>Honours Degree Project developed in React, Flask and SQLite. Features of Secure User Authentication, Admin Panel, Dynamic Content.</p>
+        <a href="https://adrenalink-uni-1.onrender.com/" class="project-link">View Project &rarr;</a>
+      </div>
+    </article>
+
+    <!-- Project 2 -->
+    <article class="project-card">
+      <div class="project-image">
+        <img src="images/aesthetics.png" alt="Project 2 Cover">
+      </div>
+      <div class="project-content">
+        <h3>Local Business Website</h3>
+        <p>Website created for a local business in Wordpress.</p>
+        <a href="https://aestheticsbynatalia.com/" class="project-link">View Project &rarr;</a>
+      </div>
+    </article>
+
+    <!-- Project 3 -->
+    <article class="project-card">
+      <div class="project-image">
+        <img src="images/cafe.png" alt="Project 3 Cover">
+      </div>
+      <div class="project-content">
+        <h3>Portfolio Project - Organic Cafe</h3>
+        <p>A responsive website project for organic cafe developed in React</p>
+        <a href="https://organicuni.netlify.app/" class="project-link">View Project &rarr;</a>
+      </div>
+    </article>
+
+    <!-- Project 4 -->
+    <article class="project-card">
+      <div class="project-image">
+        <img src="images/event.png" alt="Project 4 Cover">
+      </div>
+      <div class="project-content">
+        <h3>Student Voting App</h3>
+        <p>Web App created with Flask where students can vote for interesting events within the campus. Developed with Flask and SQLite.</p>
+        <a href="https://eventpuls.onrender.com/" class="project-link">View Project &rarr;</a>
+      </div>
+    </article>
+</div>
+</section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <h2>My Skills</h2>
+        <div class="skills-list">
+          <span class="skill-tag">Fullstack Development</span>
+          <span class="skill-tag">Drupal</span>
+          <span class="skill-tag">Wordpress</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Bootstrap</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">Data Analysis</span>
+          <span class="skill-tag">UI/UX Design</span>
+          <span class="skill-tag">Figma</span>
+          <span class="skill-tag">Adobe Photoshop</span>
+          <span class="skill-tag">AI powered creativity </span>
+          <span class="skill-tag">Generative AI </span>
+          <span class="skill-tag">Responsible AI </span>
+        </div>
+      </section>
+<!-- About Section -->
+      <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        
+        <div class="about-wrapper">
+          
+          <!-- About Image -->
+          <div class="about-image">
+             <!-- Use a photo of yourself, your workspace, or a cool graphic here -->
+            <img src="images/profilePic.png" alt="Anna Sikora logo">
+          </div>
+
+          <!-- About Content -->
+          <div class="about-content">
+            <h3>I design and build digital products that make sense.</h3>
+            
+            
+            <p>Hi, I'm Anna, a web developer based in Edinburgh, Scotland. I enjoy turning ideas, information and sometimes messy content into websites that are clear, useful and easy to navigate. With a background in Web Design and Development and professional experience at the University of Edinburgh, I've worked across website development, CMS management, content publishing, migration and quality assurance.
+
+I work with HTML, CSS, JavaScript, React, Drupal and WordPress, with a particular interest in the space where technology, design and user experience come together. I'm also interested in accessibility and creating digital experiences that work well for as many people as possible.<br> 
+<br>Beyond the screen, I love traveling, outdoor photography, and spending time with my family and my cat. I even run a cat-sitting side hustle, so I'm always happy to talk code, cameras, or cats!</p>
+            
+            <!-- Quick Facts / Stats -->
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">20+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Client Satisfaction</span>
+              </div>
+            </div>
+            
+            <!-- Optional Call to Action Button -->
+            <a href="mailto:anna.sik04@gmail.com" class="action-btn">Let's talk</a>
+          </div>
+
+        </div>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>
