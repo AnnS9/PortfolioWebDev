@@ -393,3 +393,44 @@ html {
 .socials a:hover svg {
   transform: translateY(-4px);
 }
+.portfolio-project {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 32px;
+    background: #ffffff;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #24292e;
+    line-height: 1.6;
+  }
+  .portfolio-project h2 {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 700;
+    border-bottom: 2px solid #eaecef;
+    padding-bottom: 12px;
+  }
+  .portfolio-project section {
+    margin-bottom: 28px;
+  }
+  .portfolio-project h3 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: #1f2328;
+  }
+  .portfolio-project p {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  .portfolio-project ul {
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-left: 24px;
+  }
+  .portfolio-project li {
+    margin-bottom: 8px;
+  }
