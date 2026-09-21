@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adrenalink Project - Anna Sikora</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="portfolio-container">
+    
+    <!-- KEEP YOUR EXISTING LEFT SIDE MENU HERE -->
+    <aside class="sidebar">
+      <div class="brand">
+        <a href="index.html" class="logo">MyPortfolio<span>.</span></a>
+      </div>
+      <div class="profile">
+        <img src="images/logo.png" alt="Anna Sikora" class="profile-pic">
+        <h3 class="profile-name">Anna Sikora</h3>
+      </div>
+      <nav class="menu">
+        <ul>
+          <!-- Updated links to point back to the main page sections -->
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#about">About me</a></li>
+        </ul>
+      </nav>
+      <!-- Add your existing social links here -->
+    </aside>
+
+    <!-- NEW RIGHT SIDE CONTENT FOR THE PROJECT -->
+    <main class="main-content">
+      
+      <section class="section project-detail-section">
+        <!-- Back button to return to the home page -->
+        <a href="index.html#projects" class="project-link">&larr; Back to Projects</a>
+        
+        <h2 class="section-title" style="margin-top: 20px;">Adrenalink Web Platform</h2>
+        
+        <!-- Video Player -->
+        <div class="video-container" style="margin-bottom: 30px;">
+          <video width="100%" controls poster="images/adrenalink.png">
+            <!-- Ensure you have a 'videos' folder with your video files -->
+            <source src="videos/adrenalink-demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!-- Project Description -->
+        <div class="project-description">
+          <h3>About this project</h3>
+          <p>Honours Degree Project developed in React, Flask and SQLite. Features include Secure User Authentication, Admin Panel, and Dynamic Content.</p>
+          
+          <p>Add more context here about your development process, challenges faced, or the technologies used.</p>
+
+          <!-- Link to the live site if you still want to include it -->
+          <a href="https://adrenalink-uni-1.onrender.com/" target="_blank" class="action-btn">Visit Live Site</a>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>
