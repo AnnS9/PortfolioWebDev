@@ -11,34 +11,44 @@
 
   <div class="portfolio-container">
     
-    <!-- LEFT SIDE MENU -->
-    <aside class="sidebar">
-  
-  <!-- Logo Section -->
-  <div class="brand">
-    <a href="#" class="logo">
-     
-      MyPortfolio<span>.</span>
-    </a>
-  </div>
+<!-- MOBILE HEADER NAVIGATION BAR -->
+  <header class="mobile-header">
+    <a href="#" class="logo">MyPortfolio<span>.</span></a>
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
 
-  <!-- Profile Picture Section -->
-  <div class="profile">
-    <img src="images/logo.png" alt="Anna Sikora" class="profile-pic">
-    <h3 class="profile-name">Anna Sikora</h3>
+  <div class="portfolio-container">
     
-  </div>
+    <!-- LEFT SIDE MENU -->
+    <aside class="sidebar" id="sidebar">
+  
+      <!-- Logo Section -->
+      <div class="brand">
+        <a href="#" class="logo">
+          MyPortfolio<span>.</span>
+        </a>
+      </div>
 
-  <!-- Navigation Menu -->
-  <nav class="menu">
-    <ul>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#about">About me</a></li>
-    </ul>
-  </nav>
+      <!-- Profile Picture Section -->
+      <div class="profile">
+        <img src="images/logo.png" alt="Anna Sikora" class="profile-pic" onerror="this.src='https://placehold.co/120x120/ecebe4/111111?text=AS'">
+        <h3 class="profile-name">Anna Sikora</h3>
+      </div>
 
-  <div class="socials">
+      <!-- Navigation Menu -->
+      <nav class="menu">
+        <ul>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#about" class="nav-link">About me</a></li>
+        </ul>
+      </nav>
+
+      <div class="socials">
         <!-- LinkedIn Icon -->
         <a href="https://www.linkedin.com/in/anna-sikora-webdev/" aria-label="LinkedIn" title="LinkedIn">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -64,7 +74,7 @@
         </a>
       </div>
 
-</aside>
+    </aside>
 
     <!-- RIGHT SIDE CONTENT -->
     <main class="main-content">
@@ -76,63 +86,63 @@
 
       <!-- Projects Section -->
       <section id="projects" class="section">
-  <h2 class="section-title">Selected Projects</h2>
-  
-  <div class="project-grid">
-    
-    <!-- Project 1 -->
-    <article class="project-card">
-      <div class="project-image">
-        <img src="images/adrenalink.png" alt="Project 1 Cover">
-      </div>
-      <div class="project-content">
-        <h3>Adrenalink - Web Platform for Extreme Sport Enthusiasts</h3>
-        <p>Honours Degree Project developed in React, Flask and SQLite. Features of Secure User Authentication, Admin Panel, Dynamic Content.</p>
-        <a href="project_one.html" target="_blank" class="project-link">View Project &rarr;</a>
-      </div>
-    </article>
+        <h2 class="section-title">Selected Projects</h2>
+        
+        <div class="project-grid">
+          
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/adrenalink.png" alt="Project 1 Cover" onerror="this.src='https://placehold.co/600x400/ecebe4/111111?text=Adrenalink'">
+            </div>
+            <div class="project-content">
+              <h3>Adrenalink - Web Platform for Extreme Sport Enthusiasts</h3>
+              <p>Honours Degree Project developed in React, Flask and SQLite. Features of Secure User Authentication, Admin Panel, Dynamic Content.</p>
+              <a href="project_one.html" target="_blank" class="project-link">View Project &rarr;</a>
+            </div>
+          </article>
 
-    <!-- Project 2 -->
-    <article class="project-card">
-      <div class="project-image">
-        <img src="images/aesthetics.png" alt="Project 2 Cover">
-      </div>
-      <div class="project-content">
-        <h3>Local Business Website</h3>
-        <p>Website created for a local business in Wordpress.</p>
-        <a href="project_two.html" target="_blank" class="project-link">View Project &rarr;</a>
-      </div>
-    </article>
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/aesthetics.png" alt="Project 2 Cover" onerror="this.src='https://placehold.co/600x400/ecebe4/111111?text=Local+Business'">
+            </div>
+            <div class="project-content">
+              <h3>Local Business Website</h3>
+              <p>Website created for a local business in Wordpress.</p>
+              <a href="project_two.html" target="_blank" class="project-link">View Project &rarr;</a>
+            </div>
+          </article>
 
-    <!-- Project 3 -->
-    <article class="project-card">
-      <div class="project-image">
-        <img src="images/cafe.png" alt="Project 3 Cover">
-      </div>
-      <div class="project-content">
-        <h3>Portfolio Project - Organic Cafe</h3>
-        <p>A responsive website project for organic cafe developed in React</p>
-        <a href="project_three.html" target="_blank" class="project-link">View Project &rarr;</a>
-      </div>
-    </article>
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/cafe.png" alt="Project 3 Cover" onerror="this.src='https://placehold.co/600x400/ecebe4/111111?text=Organic+Cafe'">
+            </div>
+            <div class="project-content">
+              <h3>Portfolio Project - Organic Cafe</h3>
+              <p>A responsive website project for organic cafe developed in React</p>
+              <a href="project_three.html" target="_blank" class="project-link">View Project &rarr;</a>
+            </div>
+          </article>
 
-    <!-- Project 4 -->
-    <article class="project-card">
-      <div class="project-image">
-        <img src="images/event.png" alt="Project 4 Cover">
-      </div>
-      <div class="project-content">
-        <h3>Student Voting App</h3>
-        <p>Web App created with Flask where students can vote for interesting events within the campus. Developed with Flask and SQLite.</p>
-        <a href="project_four.html" target="_blank" class="project-link">View Project &rarr;</a>
-      </div>
-    </article>
-</div>
-</section>
+          <!-- Project 4 -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/event.png" alt="Project 4 Cover" onerror="this.src='https://placehold.co/600x400/ecebe4/111111?text=Student+Voting+App'">
+            </div>
+            <div class="project-content">
+              <h3>Student Voting App</h3>
+              <p>Web App created with Flask where students can vote for interesting events within the campus. Developed with Flask and SQLite.</p>
+              <a href="project_four.html" target="_blank" class="project-link">View Project &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </section>
 
       <!-- Skills Section -->
       <section id="skills" class="section">
-        <h2>My Skills</h2>
+        <h2 class="section-title">My Skills</h2>
         <div class="skills-list">
           <span class="skill-tag">Fullstack Development</span>
           <span class="skill-tag">Drupal</span>
@@ -146,12 +156,13 @@
           <span class="skill-tag">UI/UX Design</span>
           <span class="skill-tag">Figma</span>
           <span class="skill-tag">Adobe Photoshop</span>
-          <span class="skill-tag">AI powered creativity </span>
-          <span class="skill-tag">Generative AI </span>
-          <span class="skill-tag">Responsible AI </span>
+          <span class="skill-tag">AI powered creativity</span>
+          <span class="skill-tag">Generative AI</span>
+          <span class="skill-tag">Responsible AI</span>
         </div>
       </section>
-<!-- About Section -->
+
+      <!-- About Section -->
       <section id="about" class="section">
         <h2 class="section-title">About Me</h2>
         
@@ -159,19 +170,16 @@
           
           <!-- About Image -->
           <div class="about-image">
-             <!-- Use a photo of yourself, your workspace, or a cool graphic here -->
-            <img src="images/profilePic.png" alt="Anna Sikora logo">
+            <img src="images/profilePic.png" alt="Anna Sikora logo" onerror="this.src='https://placehold.co/600x600/ecebe4/111111?text=Anna+Sikora'">
           </div>
 
           <!-- About Content -->
           <div class="about-content">
             <h3>I design and build digital products that make sense.</h3>
             
-            
-            <p>Hi, I'm Anna, a web developer based in Edinburgh, Scotland. I enjoy turning ideas, information and sometimes messy content into websites that are clear, useful and easy to navigate. With a background in Web Design and Development and professional experience at the University of Edinburgh, I've worked across website development, CMS management, content publishing, migration and quality assurance.
-
-I work with HTML, CSS, JavaScript, React, Drupal and WordPress, with a particular interest in the space where technology, design and user experience come together. I'm also interested in accessibility and creating digital experiences that work well for as many people as possible.<br> 
-<br>Beyond the screen, I love traveling, outdoor photography, and spending time with my family and my cat. I even run a cat-sitting side hustle, so I'm always happy to talk code, cameras, or cats!</p>
+            <p>Hi, I'm Anna, a web developer based in Edinburgh, Scotland. I enjoy turning ideas, information and sometimes messy content into websites that are clear, useful and easy to navigate. With a background in Web Design and Development and professional experience at the University of Edinburgh, I've worked across website development, CMS management, content publishing, migration and quality assurance.<br><br>
+            I work with HTML, CSS, JavaScript, React, Drupal and WordPress, with a particular interest in the space where technology, design and user experience come together. I'm also interested in accessibility and creating digital experiences that work well for as many people as possible.<br><br> 
+            Beyond the screen, I love traveling, outdoor photography, and spending time with my family and my cat. I even run a cat-sitting side hustle, so I'm always happy to talk code, cameras, or cats!</p>
             
             <!-- Quick Facts / Stats -->
             <div class="about-stats">
@@ -198,5 +206,31 @@ I work with HTML, CSS, JavaScript, React, Drupal and WordPress, with a particula
     </main>
   </div>
 
+  <script>
+    // Toggle mobile sidebar menu
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const sidebar = document.getElementById('sidebar');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    hamburgerBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+
+    // Close menu when a navigation link is clicked on mobile
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 900) {
+          sidebar.classList.remove('active');
+        }
+      });
+    });
+
+    // Close menu when clicking outside on mobile
+    document.addEventListener('click', (e) => {
+      if (window.innerWidth <= 900 && !sidebar.contains(e.target) && !hamburgerBtn.contains(e.target)) {
+        sidebar.classList.remove('active');
+      }
+    });
+  </script>
 </body>
 </html>
