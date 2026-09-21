@@ -1,11 +1,13 @@
 /* --- Color Variables --- */
     :root {
-      --bg-yellow: #ffffff; 
+      --bg-white: #ffffff; 
+      --bg-yellow: #f0b624; 
       --bg-white: #fdfdfd;
       --text-dark: #111111; 
       --text-muted: #555555;
       --border-color: rgba(17, 17, 17, 0.15); 
       --accent-yellow: #DAA520; 
+      --accent-grey: #494947; 
     }
 
     /* --- Base Styles --- */
@@ -18,7 +20,7 @@
     body {
       font-family: 'Helvetica Neue', Arial, sans-serif;
       color: var(--text-dark);
-      background-color: var(--bg-yellow); 
+      background-color: var(--bg-white); 
       line-height: 1.6;
     }
 
@@ -39,7 +41,7 @@
       left: 0;
       width: 100%;
       height: 70px;
-      background-color: var(--bg-yellow);
+      background-color: var(--bg-white);
       border-bottom: 1px solid var(--border-color);
       padding: 0 1.5rem;
       justify-content: space-between;
@@ -88,7 +90,7 @@
       width: 320px;
       height: 100vh;
       background-color: var(--bg-yellow); 
-      border-right: 1px solid var(--border-color);
+      
       padding: 3rem 2rem;
       display: flex;
       flex-direction: column;
@@ -108,7 +110,7 @@
     }
 
     .brand .logo span {
-      color: var(--accent-yellow); 
+      color: var(--accent-white); 
     }
 
     /* Profile Picture & Info */
@@ -124,7 +126,7 @@
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 1rem;
-      border: 3px solid var(--text-dark); 
+      
       padding: 4px; 
     }
 
@@ -186,7 +188,7 @@
 
     /* Hover effects */
     .socials a:hover {
-      color: var(--accent-yellow);
+      color: var(--accent-grey);
     }
 
     .socials a:hover svg {
@@ -488,3 +490,46 @@
     .portfolio-project li {
       margin-bottom: 8px;
     }
+    .project-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+/* Active state triggered when scrolled into view */
+.project-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional: Stagger the animation delay for each card in the grid */
+.project-grid .project-card:nth-child(1) { transition-delay: 0.1s; }
+.project-grid .project-card:nth-child(2) { transition-delay: 0.2s; }
+.project-grid .project-card:nth-child(3) { transition-delay: 0.3s; }
+.project-grid .project-card:nth-child(4) { transition-delay: 0.4s; }
+
+.section-title {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+/* Active state triggered when scrolled into view */
+.section-title.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.skill-tag {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+  will-change: opacity, transform;
+}
+
+/* Active state when in view */
+.skill-tag.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
